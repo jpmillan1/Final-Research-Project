@@ -76,3 +76,40 @@ This project follows a three-stage cleaning pipeline:
 3. **Jupyter Notebook analysis** validates the final cleaned dataset using convergence, performance metrics, and cross-source comparisons.
 
 This step-by-step workflow reproduces the complete data-cleaning methodology required for Part 2 of the Architecture Alphabet framework.
+
+
+
+
+
+
+
+
+---
+
+# ⚙️ Installation and Notebook Usage
+
+This project was developed in Python and uses both modular scripts (`.py`) and Jupyter notebooks (`.ipynb`) for analysis and validation.  
+To ensure reproducibility, follow the installation steps below.
+
+---
+
+## ✅ Requirements
+- Python 3.8 or later  
+- pip (Python package manager)  
+- Jupyter Notebook or JupyterLab  
+- (Optional) Visual Studio Code with the Python extension  
+- (Optional) Anaconda Distribution (Jupyter included, but not required)
+
+---
+
+## 📦 Install Dependencies
+
+Install all dependencies using the provided `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+# or manually install
+pip install pandas chardet pytz matplotlib scikit-learn jupyter
+
+
+
