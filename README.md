@@ -65,6 +65,7 @@ Or run the pipeline inside the Jupyter notebook.
 
 
 
+
 📊 Validation
 This project uses the FHWA Data Cleaning and Fusion Tool to validate:
 
@@ -73,6 +74,8 @@ This project uses the FHWA Data Cleaning and Fusion Tool to validate:
 - Timestamp consistency
 
 - Travel time confidence intervals (<0.1% outside federal bounds)
+
+  
 
 
 📚 Architecture Alphabet Context
