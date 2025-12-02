@@ -25,7 +25,7 @@ These checks behave like lightweight unit tests and validate the correctness of 
 ### 3. Validation Scripts with Expected Results
 Several scripts in the repository produce validation-ready tables and figures with expected outputs:
 
-- **`analysis.ipynb`**  
+- **`analysis**  
   Computes:
   - Spatial validity percentage  
   - Error-code removal count  
@@ -48,3 +48,4 @@ Expected results include:
 - R² ≈ –1.02 when comparing raw waypoint speeds with cleaned trajectory speeds
 
 These outputs confirm that the cleaning steps executed successfully and that differences between data sources originate from measurement characteristics rather than processing errors.
+
