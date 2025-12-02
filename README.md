@@ -112,6 +112,13 @@ This produces the figures, metrics, convergence plots, and cross-source validati
 │   ├── 3. Cross-Source Speed Validation (Waypoint vs Trajs).ipynb
 │   ├── 4. Cleaning Performance Metrics.ipynb
 │   └── Project Step-by-Step Workflow.md
+├── data_cleaning_fusion_datasets/      # Input data of this project
+│   ├── network/
+│   ├── sensor/
+│   ├── tmc_speed/
+│   ├── waypoint/  # Data used on this project
+│   └── trip path/ # Data used on this project
+
 ├── Output/    # (ignored in .gitignore)
 │   └── database/
 │       └── unified_database.db
