@@ -88,8 +88,8 @@ notebooks/analysis.ipynb
 This produces the figures, metrics, convergence plots, and cross-source validation used in the final report.
 
 
-## 🛠 Technologies Used
-- **Python 3.10** — main programming language  
+## 🛠 🧪 Technologies and Environment Used
+- **Python 3.11.5** — This project was developed using the following environment configuration.
 - **pandas** — data cleaning and manipulation  
 - **SQLite3** — unified database storage  
 - **matplotlib** — visualizations  
