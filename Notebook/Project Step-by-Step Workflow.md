@@ -4,6 +4,35 @@ This document summarizes the exact workflow used to complete **Part 2: Data Clea
 
 ---
 
+# ⚙️ Installation and Notebook Usage
+
+This project was developed in Python and uses both modular scripts (`.py`) and Jupyter notebooks (`.ipynb`) for analysis and validation.  
+To ensure reproducibility, follow the installation steps below.
+
+---
+
+## ✅ Requirements
+- Python 3.8 or later  
+- pip (Python package manager)  
+- Jupyter Notebook or JupyterLab  
+- (Optional) Visual Studio Code with the Python extension  
+- (Optional) Anaconda Distribution (Jupyter included, but not required)
+
+---
+
+## 📦 Install Dependencies
+
+Install all dependencies using the provided `requirements.txt`:
+
+```bash
+pip install -r requirements.txt
+
+or manually install
+pip install pandas chardet pytz matplotlib scikit-learn jupyter
+
+
+
+
 ## 1. Run the FHWA Data Cleaning and Fusion Tool (DCFT)
 
 The first stage of the project uses the official **FHWA Data Cleaning and Fusion Tool**, which performs initial preprocessing on the raw datasets. The tool:
