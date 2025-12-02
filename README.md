@@ -21,33 +21,35 @@ The workflow ensures spatial consistency, removes invalid and error-coded record
 - External validation using FHWA Data Cleaning and Fusion Tool (DCFT)  
 - Output: unified, analysis-ready SQLite database
 
----
+## 📁 Project Structure
 
-## 🧱 Project Structure
-
+``` 
 ├── src/
-│ ├── csv_to_sqlite_processor.py
-│ ├── basic_data_cleaner.py
-│ └── time_standardization_processor.py
+│   ├── csv_to_sqlite_processor.py
+│   ├── basic_data_cleaner.py
+│   └── time_standardization_processor.py
 ├── notebooks/
-│ └── analysis.ipynb
-├── Output/ # (ignored in .gitignore)
-│ └── database/
-│ └── unified_database.db
+│   └── analysis.ipynb
+├── Output/    # (ignored in .gitignore)
+│   └── database/
+│       └── unified_database.db
 ├── README.md
 └── .gitignore
+```
 
-
-
----
 
 ## ⚙️ Installation
 
 ```bash
 pip install -r requirements.txt
+```
 
-Or manually install
-pip install pandas sqlite3 chardet pytz
+Or install manually:
+
+```bash
+pip install pandas chardet pytz sqlite3
+```
+
 
 
 
