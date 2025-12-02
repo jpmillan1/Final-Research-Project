@@ -25,7 +25,6 @@ The workflow ensures spatial consistency, removes invalid and error-coded record
 
 ``` 
 ├── src/
-│   ├── csv_to_sqlite_processor.py
 │   ├── basic_data_cleaner.py
 │   └── time_standardization_processor.py
 ├── notebooks/
