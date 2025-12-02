@@ -2,34 +2,6 @@
 
 This document summarizes the exact workflow used to complete **Part 2: Data Cleaning** of the Architecture Alphabet framework. It explains how the FHWA tool and the custom Python scripts were used sequentially to generate the final cleaned and validated dataset.
 
----
-
-# ⚙️ Installation and Notebook Usage
-
-This project was developed in Python and uses both modular scripts (`.py`) and Jupyter notebooks (`.ipynb`) for analysis and validation.  
-To ensure reproducibility, follow the installation steps below.
-
----
-
-## ✅ Requirements
-- Python 3.8 or later  
-- pip (Python package manager)  
-- Jupyter Notebook or JupyterLab  
-- (Optional) Visual Studio Code with the Python extension  
-- (Optional) Anaconda Distribution (Jupyter included, but not required)
-
----
-
-## 📦 Install Dependencies
-
-Install all dependencies using the provided `requirements.txt`:
-
-```bash
-pip install -r requirements.txt
-# or manually install
-pip install pandas chardet pytz matplotlib scikit-learn jupyter
-
-
 
 
 ## 1. Run the FHWA Data Cleaning and Fusion Tool (DCFT)
