@@ -54,7 +54,7 @@ This structure ensures full reproducibility and maintains consistency with FHWAâ
 This project requires running the **FHWA Data Cleaning and Fusion Tool (DCFT)** before executing any Python scripts. The usage workflow is:
 
 ### 1. Run the FHWA Data Cleaning and Fusion Tool
-1. Download or use the version included in the **Data Cleaning and Fusion Tool** folder of this repository.  
+1. Download or use the version included in the **Data Cleaning and Fusion Tool** folder of the provided repository "Acknowledgements" section. App.zip and Synthesize Data.zip, must be downloaded separately or obtained via Git clone to work properly. Downloading the entire repository directly will not be usable.  
 2. Modify the **INPUT** folder to point to the raw datasets  
    (e.g., `data_cleaning_fusion_datasets/`).  
 3. Modify the **OUTPUT** folder to specify where the tool should store results  
