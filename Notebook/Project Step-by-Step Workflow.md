@@ -26,8 +26,7 @@ Install all dependencies using the provided `requirements.txt`:
 
 ```bash
 pip install -r requirements.txt
-
-or manually install
+# or manually install
 pip install pandas chardet pytz matplotlib scikit-learn jupyter
 
 
