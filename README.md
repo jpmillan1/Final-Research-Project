@@ -88,6 +88,15 @@ notebooks/analysis.ipynb
 This produces the figures, metrics, convergence plots, and cross-source validation used in the final report.
 
 
+## 🛠 Technologies Used
+- **Python 3.10** — main programming language  
+- **pandas** — data cleaning and manipulation  
+- **SQLite3** — unified database storage  
+- **matplotlib** — visualizations  
+- **scikit-learn** — validation metrics (RMSE, R², MAE, MAPE)  
+- **Jupyter Notebook** — exploratory analysis and documentation  
+
+
 
 ## 📁 Project Structure
 
