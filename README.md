@@ -49,7 +49,43 @@ These files are then further processed using the custom Python scripts found in 
 
 This structure ensures full reproducibility and maintains consistency with FHWA’s official preprocessing standards.
 
+## 🚀 Usage
 
+This project requires running the **FHWA Data Cleaning and Fusion Tool (DCFT)** before executing any Python scripts. The usage workflow is:
+
+### 1. Run the FHWA Data Cleaning and Fusion Tool
+1. Download or use the version included in the **Data Cleaning and Fusion Tool** folder of this repository.  
+2. Modify the **INPUT** folder to point to the raw datasets  
+   (e.g., `data_cleaning_fusion_datasets/`).  
+3. Modify the **OUTPUT** folder to specify where the tool should store results  
+   (e.g., `Output/`).  
+4. Run the application:
+   - **Windows:** `Data Cleaning and Fusion Tool.exe`  
+   - **macOS:** `Data Cleaning and Fusion Tool.app`  
+5. The tool will generate:
+   - `Output/database/unified_database.db`  
+   - `Output/mapmatching/mapmatching.csv`  
+   - Cleaned and synthesized tables  
+   - Raw CSV copies for comparison (BEFORE)
+
+### 2. Run the Python cleaning and analyses scripts
+After the DCFT tool has produced the initial database:
+
+```bash
+python src/basic_data_cleaner.py
+python src/time_standardization_processor.py
+```
+
+These scripts apply additional custom filtering, timestamp standardization, and database refinement.
+
+### 3. Run the analysis notebook
+Open the notebook for validation and visualization:
+
+```bash
+notebooks/analysis.ipynb
+```
+
+This produces the figures, metrics, convergence plots, and cross-source validation used in the final report.
 
 
 
@@ -80,20 +116,6 @@ Or install manually:
 ```bash
 pip install pandas chardet pytz sqlite3
 ```
-
-
-
-
-
-## ▶️ Usage
-
-Run each processing stage in order:
-python csv_to_sqlite_processor.py
-python basic_data_cleaner.py
-python time_standardization_processor.py
-
-Or run the pipeline inside the Jupyter notebook.
-
 
 
 
