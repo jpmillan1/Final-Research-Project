@@ -48,7 +48,7 @@ This script enforces temporal consistency across all datasets:
 
 The final stage is implemented in the Jupyter notebook:
 
-### **`notebooks/analysis.ipynb`**
+### **`notebooks/`**
 This notebook computes key metrics and produces visual validation outputs:
 
 - BEFORE vs AFTER row counts  
