@@ -101,11 +101,17 @@ This produces the figures, metrics, convergence plots, and cross-source validati
 ## 📁 Project Structure
 
 ``` 
-├── src/
-│   ├── basic_data_cleaner.py
-│   └── time_standardization_processor.py
+├── CODE/
+│   └── src/
+│       └── basic_data_cleaning
+│           ├── basic_data_cleaner.py
+│           └── time_standardization_processor.py
 ├── notebooks/
-│   └── analysis.ipynb
+│   ├── 1. Analysis before and after.ipynb
+│   ├── 2. Covergence Analysis.ipynb
+│   ├── 3. Cross-Source Speed Validation (Waypoint vs Trajs).ipynb
+│   ├── 4. Cleaning Performance Metrics.ipynb
+│   └── Project Step-by-Step Workflow.md
 ├── Output/    # (ignored in .gitignore)
 │   └── database/
 │       └── unified_database.db
