@@ -1,25 +1,28 @@
 # Final Research Project — Part 2: Data Cleaning
 
-This repository contains an end-to-end preprocessing workflow for cleaning, validating, and standardizing traffic datasets for use in transportation modeling. The project implements **Part 2: Data Cleaning** of the Architecture Alphabet framework and produces a unified SQLite database integrating two major data sources:
+This repository contains an end-to-end preprocessing workflow for cleaning, validating, and standardizing traffic datasets for use in transportation modeling. This project implements Part 2: Data Cleaning using the official FHWA Data Cleaning & Fusion Tool as the primary engine, supplemented with custom Python scripts for analysis, validation, and extended metrics.
 
-- **Trajectory data (`trajs`)** — segment-level crossing events.
-- **Waypoint data (`waypoint`)** — high-frequency GPS pings.
+Two major probe data sources are integrated:
 
-The workflow ensures spatial consistency, removes invalid and error-coded records, standardizes timestamps across heterogeneous formats, and prepares the data for arc-based models, path-based analysis, tensor construction, and machine learning tasks.
+Trajectory data (trajs) — segment-level crossing events
+
+Waypoint data (waypoint) — high-frequency GPS pings
+
+The workflow ensures spatial consistency, removes invalid and error-coded records, standardizes timestamps across heterogeneous formats, and prepares the cleaned data for arc-based models, path-based analysis, tensor construction, and machine-learning tasks.
 
 ---
 
 ## 🚦 Features
 
 - Automatic CSV → SQLite ingestion with type inference  
-- Cleaning of invalid SegmentId records  
-- Removal of error-coded trajectories  
-- Deduplication of waypoint timestamps  
-- Filtering of fuzzed/outlier GPS data  
-- Detection of missing GPS intervals using 3-second gap analysis  
-- Full timestamp standardization (UTC, ISO, Unix → local time)  
-- External validation using FHWA Data Cleaning and Fusion Tool (DCFT)  
-- Output: unified, analysis-ready SQLite database
+- Removal of invalid SegmentId records (Package 2)
+- Filtering of out-of-network and error-coded trajectory records
+- Deduplication of waypoint timestamp entries (Package 1)  
+- Detection (not removal) of fuzzed/missing waypoint GPS points
+- Segment-level speed reconstruction using link lengths + travel times
+- Full timestamp standardization (UTC, ISO, Unix → local time)
+- Cross-source speed validation (Waypoint vs. Trajs)
+- Unified, analysis-ready SQLite database aligned with FHWA preprocessing standards
 
 
 ## 🧰 FHWA Data Cleaning and Fusion Tool
@@ -59,7 +62,7 @@ This project requires running the **FHWA Data Cleaning and Fusion Tool (DCFT)** 
    (e.g., `data_cleaning_fusion_datasets/`).  
 3. Modify the **OUTPUT** folder to specify where the tool should store results  
    (e.g., `Output/`).  
-4. Run the application:
+4. Run the application Package 1 and 2:
    - **Windows:** `Data Cleaning and Fusion Tool.exe`  
    - **macOS:** `Data Cleaning and Fusion Tool.app`  
 5. The tool will generate:
