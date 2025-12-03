@@ -109,24 +109,31 @@ This produces the figures, metrics, convergence plots, and cross-source validati
 │       └── basic_data_cleaning
 │           ├── basic_data_cleaner.py
 │           └── time_standardization_processor.py
+│
 ├── notebooks/
-│   ├── 1. Analysis before and after.ipynb
-│   ├── 2. Covergence Analysis.ipynb
-│   ├── 3. Cross-Source Speed Validation (Waypoint vs Trajs).ipynb
-│   ├── 4. Cleaning Performance Metrics.ipynb
-│   └── Project Step-by-Step Workflow.md
+│   ├── 1. Statistical Summary Comparison.ipynb
+│   ├── 2. SPEED DISTRIBUTION ANALYSIS.ipynb
+│   ├── 3. Corridor Speed Distribution Analysis (using map-matched waypoint).ipynb
+│   ├── 4. cleaning_impacts_with_mapmatching.ipynb
+│   ├── 5. speed_distribution_4panel_correct.ipynb
+│   ├── 6. speed_distributions_waypoint_trajs_input_clean.ipynb
+│   ├── 7. cross_source_speed_validation_links.ipynb
+│   └── 8. data_completeness_waypoint_trajs.ipynb
+│
 ├── data_cleaning_fusion_datasets/      # Input data of this project
 │   ├── network/
 │   ├── sensor/
 │   ├── tmc_speed/
-│   ├── waypoint/  # Data used on this project
-│   └── trip path/ # Data used on this project
-
+│   ├── waypoint/      # Waypoint data used in this project
+│   └── trip path/     # Trip path data used in this project
+│
 ├── Output/    # (ignored in .gitignore)
 │   └── database/
 │       └── unified_database.db
+│
 ├── README.md
 └── .gitignore
+
 ```
 
 
